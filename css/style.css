@@ -1,0 +1,651 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2');
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    height: 769px;
+    background-image: url(../images/bg_home.svg);
+    background-position:right bottom;
+    background-repeat: no-repeat;
+    font-family: 'Noto Sans TC';
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+ .container {
+    max-width: 1085px;
+    margin: 0 auto;
+   
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    padding: 24px 20px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    width: 218px;
+    height: 40px;
+}
+.navbar>a {
+    display: block;
+    background: #FF5D50;
+    color:#FFFFFF;
+    width: 124px;
+    height: 40px;
+    border-radius: 22px;
+   text-align: center;
+   line-height: 44px;
+   
+}
+
+.navbar>a:hover {
+    background: #FFFFFF;
+    color:#FF5D50;
+    border:1px solid #FF5D50;
+}
+
+
+.banner {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 280px;
+}
+
+.banner img{
+    max-width: 532px;
+    height: 534px;
+}
+
+.banner .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.text h2 {
+    height: 26px;
+    color:#56C4C5;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.text h3 {
+    color:#221E1F;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.text p {
+    color:#221E1F;
+    font-size: 20px;
+}
+
+.platform {
+    margin-bottom: 100px;
+}
+.platform h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 48px;
+    font-weight: bold;
+}
+
+.platformList {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.platform img {
+    max-width: 90px;
+    height: 90px;
+    display:block; 
+    margin:0 auto;
+
+}
+
+.platform h3 {
+    margin:24px 0 24px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.platform p {
+    font-size: 16px;
+    color: #747474;
+    line-height: 1.4;
+}
+.platformList li {
+    width: 33%;
+    text-align: center;
+}
+.roles {
+    margin-bottom: 100px;
+}
+.roles h2 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.roles p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.roleList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.roleList li {
+    box-shadow: 0 2px 10px #00000014;
+    border-radius: 12px;
+}
+
+.roleList img  {
+    max-width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+.roleList h3 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    color:#56C4C5;
+    margin: 16px 0;
+}
+.roleList p {
+    font-size: 16px;
+    color:#221E1F;
+    text-align: center;
+}
+
+.roleList li {
+    width: 23%;
+    
+}
+    
+
+
+.roleList img {
+    max-width: 100%;
+    margin-bottom: 16px;
+}
+
+.lightblueball {
+    height: 310px;
+    position: absolute;
+    right:-150px;
+    top: 1700px;
+}
+
+.server {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.serverItem {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    width: 50%;
+    margin-right: 47px;
+   
+   
+}
+.radius_img {
+    max-width: 86px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px #00000014;
+    padding: 17px;
+    margin: 32px 0 24px 0;
+}   
+
+.radius_img img {
+    width: 52px;
+    height: 52px;
+}
+
+
+.serverItem li {
+    width: 45%;
+    padding: 0 32px;
+    margin-bottom: 28px;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+}
+
+.serverItem h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.serverItem p {
+    font-size: 16px;
+    margin-bottom: 48px;
+    line-height: 1.4;
+}
+
+.explain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+}
+.explain h2 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.explain  p {
+    font-size: 18x;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+
+.btnpay {
+   color:#FFFFFF;
+   border: 1px solid #56C4C5;
+   background-color:#56C4C5;
+   padding: 12px 32px;
+    border-radius: 27px;
+    text-align: center;
+}
+
+.btnpay:hover {
+    background: #FFFFFF;
+    color:#56C4C5;
+    border:1px solid #56C4C5;
+}
+
+.comment {
+    margin-bottom: 100px;
+}
+.comment_text {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.comment_text li {
+    position: relative;
+    padding: 0 32px;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+}
+
+.comment h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 104px;
+ }
+
+.comment_text p {
+    font-size: 16px;
+    line-height: 1.2;
+    padding-bottom: 20px;
+    border-bottom:2px solid #E5E4E2;
+    margin: 48px 0 28px 0;
+}
+
+.comment_text li>img {
+   max-width: 80px;
+   height: 80px;
+   border-radius:50px;
+   position: absolute;
+   top:-50px;
+   left:32px;
+ }
+
+ .comment_text h3 {
+     font-size: 16px;
+     font-weight: bold;
+     margin-bottom: 16px;
+ }
+
+.comment_status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.starList {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.comment_status img {
+    display: block;
+    max-width: 16px;
+    height: 16px;
+    margin-left:8px;
+  
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../images/home_footer.svg);
+    height: 503px;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    text-align: center;
+    
+}
+
+.footer h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    padding: 260px 0 48px 0;
+}
+
+.footer a {
+    display: inline-block;
+    color:#FFFFFF;
+    border: 1px solid #56C4C5;
+    background-color:#56C4C5;
+    padding: 12px 32px;
+    border-radius: 27px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.footer p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 100px;
+    padding: 16px 0;
+    background-color: #F5F5F5;
+}
+
+@media (max-width:992px) {
+    .container {
+        padding: 0px 25px;
+    }
+    .banner img {
+        max-width: 480px;
+        height: 480px;
+    }
+
+    .serverItem  li {
+        width: 48%;
+
+    }
+    .footer {       
+        background-size: contain; 
+
+    }
+
+
+
+
+
+}
+@media (max-width:767px) {
+
+    body {     
+        background-image: url(../images/bg_home_sm.svg);
+        background-position: center;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        border-bottom: 2px solid #FFD153;
+        z-index: 200;
+        background-color: white;
+    }
+
+
+    .container {
+        margin-top: 100px;
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .platformList li {
+        margin-bottom: 16px;
+    }
+    .roleList {
+        flex-wrap: wrap;
+    }
+   
+    .roleList  li {
+        width: 48%;
+    }
+
+
+    .server {
+        flex-direction: column;
+
+    }
+    .serverItem {
+        width: 100%;
+        justify-content: space-between;
+
+    }
+
+    .explain {
+        width: 100%;
+        align-self: flex-start;
+        margin-left: 70px;
+    }
+
+
+    .footer {
+        background-image: url(../images/footer_sm.svg);
+        background-size: 100%;
+    }
+}
+
+@media (max-width:568px) {
+
+
+    .banner img {
+        max-width: 400px;
+        height: 400px;
+    }
+
+
+    .text {
+        margin-bottom: 32px;
+    }
+    .text h2 {
+        font-size: 16px;
+    }
+
+    .text h3 {
+        font-size: 32px;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+
+    .platformList {
+        flex-direction:column;
+        align-items: center;
+
+    }
+
+    .platformList li {
+        width: 80%;
+    }
+
+    .roleList {
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .roleList li {
+        width:80%;
+        margin-bottom: 24px;
+    }
+
+    .serverItem {
+       justify-content: center;
+        align-items: center; 
+        width: 100%;
+
+    }
+
+    .serverItem li  {
+        width: 80%;
+    }
+    
+    .explain {
+        width: 80%;
+    }
+
+
+    .comment_text {
+        flex-direction:column;
+        align-items: center;
+
+
+    }
+    .comment_text li {
+        width: 80%;
+        margin-bottom: 100px;
+
+    }
+
+    .footer h2 {
+        font-size: 24px;
+    }
+}
+
+@media(max-width:375px) {
+    
+    .banner img {
+        max-width: 304px;
+        height: 304px;
+    }
+    
+    
+    .platformList li {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .roleList li {
+        width: 90%;
+    }
+
+ 
+    .serverItem  {
+        width: 100%;
+    }
+    
+    .serverItem li {
+        width: 90%;
+    }
+    
+    .explain {
+        width:90%;
+        align-self: center;
+        margin-left: 0px;
+       
+    }
+
+    .explain a {
+        display: block;
+        text-align: center;
+
+    }
+
+
+    .comment_text li {
+        width: 90%;
+  
+      }
+
+}
+
+
+
