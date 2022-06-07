@@ -8,11 +8,13 @@
     <title>chatTalker 方案費用</title>
 </head>
 <body>
+    <div class="Yellowball"></div>
     <div class="container">
+        <div class="btn_top">
+            <a href="#"><img src="images/top.png" alt="TOP圖示"></a>
+        </div>
         <div class="header">     
-            <div class="top">
-                <a href="pay.html"><img src="images/top.png" alt="TOP圖示"></a>
-            </div>
+
              <div class="navbar">
                  <h1><a href="pay.html" alt="chatTalker logo"><img src="images/logo.png"></a></h1>
               <a href="pay.html" class="btnpay">方案費用</a>
@@ -50,7 +52,7 @@
                               =
                           </li>
                           <li>
-                              <div class="month_pay">
+                              <div class="basic_month_pay">
                                 <h3>試算每月的費用</h3>
                                 <p>600</p>
                                 <span>TWD</span>
@@ -82,7 +84,7 @@
                                 =
                             </li>
                             <li>
-                                <div class="month_pay">
+                                <div class="standard_month_pay">
                                   <h3>試算每月的費用</h3>
                                   <p>1600</p>
                                   <span>TWD</span>
@@ -104,25 +106,30 @@
                    <h2>常見問題</h2>
                    <ul class="questionList">
                        <li>
-                            <div class="question_item">
-                                <p>我要怎麼變更方案</p>
-                                <img src="images/icon_plus.svg" alt="plus圖示">
-                            </div>
-                           
+                        <div class="question_item">
+                              <h3 class="question_text">我要怎麼變更方案</h3>
+                              <img class="plus" src="images/icon_plus.svg" alt="plus圖示">
+                              <img class="minus" src="images/icon_minus.svg" alt="minus圖示">
+                             
+                        </div>
+                        <p class="question_ans">若還未結帳，請先點選方案費用，進行結帳<br>若已有方案，請洽客服專線 (02)222333789</p>
+                          
                         </li>
                        <li>
                         <div class="question_item">
-                            <p>如果我沒有LINE官方帳號怎麼辦？</p>
-                            <img src="images/icon_plus.svg" alt="plus圖示">
+                            <h3 class="question_text">如果我沒有LINE官方帳號怎麼辦？</h3>
+                            <img class="plus" src="images/icon_plus.svg" alt="plus圖示">
+                            <img class="minus" src="images/icon_minus.svg" alt="minus圖示">
                         </div>
-                         
+                        <p class="question_ans">請掃瞄我們的QrCode，加入我們的Line官方帳號<br>若不知如何操作，請洽客服專線 (02)222333789</p>
                        </li>
                        <li>
                         <div class="question_item">
-                            <p>非上班日有客服支援嗎？</p>
-                            <img src="images/icon_plus.svg" alt="plus圖示">
+                            <h3 class="question_text">非上班日有客服支援嗎？</h3>
+                            <img class="plus" src="images/icon_plus.svg" alt="plus圖示">
+                            <img class="minus" src="images/icon_minus.svg" alt="minus圖示">
                         </div>
-                         
+                        <p class="question_ans">當然哦！我們錢都收了，不會拋棄你的！<br>請您直接來我們公司，我們假日也都在辦公室。</p>
                        </li>
                    </ul>
                </div>
@@ -133,5 +140,7 @@
     <div class="footer">
         <p>©2022 chatTalker.All Rights Reserved.</p>
     </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/chatTalker.js"></script>
 </body>
 </html>
